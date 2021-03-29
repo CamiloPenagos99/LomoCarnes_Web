@@ -46,16 +46,16 @@ $(document).ready(function(){
     //Selector de tema--
 
     var temaweb = $("#theme");
-    var orange = '../css/style1.css'; //Hoja de estilo
+    var orange = 'css/style1.css'; //Hoja de estilo
     var valor=$("#theme").attr("value"); //Cambiar valor del tema
     $("#changetheme").click(function(){
         //alert($("#theme").attr("value"));
        if($("#theme").attr("value")=="blue"){
-        temaweb.attr("href","..\\css\\style_orange.css");
+        temaweb.attr("href","css\\style_orange.css");
         temaweb.attr("value","orange")
     }
      else{
-        temaweb.attr("href","..\\css\\style1.css");
+        temaweb.attr("href","css\\style1.css");
         temaweb.attr("value","blue")
      }
 
@@ -90,6 +90,6 @@ $(document).ready(function(){
      localStorage.setItem("input_name",name);
    })
     
-   
+
     
 })
