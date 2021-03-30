@@ -13,11 +13,18 @@
         <!---Plugins Jquery-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
         <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+        <!-- Plugin validacion -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+        <!---Jquery UI --->
+        <link rel="stylesheet" href="js\Jquery_UI\jquery-ui-1.12.1\jquery-ui.min.css">
+        <link rel="stylesheet" href="js\Jquery_UI\jquery-ui-1.12.1\jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="js\Jquery_UI\jquery-ui-1.12.1\jquery-ui.theme.min.css">
+        <script type="text/javascript" src="js\Jquery_UI\jquery-ui-1.12.1\jquery-ui.min.js"></script>
         <!---Librerias JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.js"></script>
         <!---Java Script-->
-        <script type="text/javascript" src="js\main.js"></script>
+        <script type="text/javascript" src="js\contact.js"></script>
         
         <!---Inicio WEB-->
     </head>
@@ -41,41 +48,40 @@
            <!---Logo Pagina--->
            <img class="logo" src="img\whitelogo.png">
         <ul>
-            <li><a class="active" href="#home">Inicio</a></li>
+            <li><a href="index.html">Inicio</a></li>
             <li><a href="#product">Productos</a></li>
-            <li><a href="contact.html">Contactos</a></li>
+            <li><a class="active" href="contact.html">Contactos</a></li>
             <li><a href="about.html">Nosotros</a></li>
           </ul>
         </nav>
-       </header>
-    
-       <!---Slider-->
-       <div class="slider">
-        <div><img src="img\slider\slide1.jpg" title="Slide uno"></div>
-        <div><img src="img\slider\slide2.jpg" title="Slide dos"></div>
-        <div><img src="img\slider\slide3.jpg" title="Slide tres"></div>
-       </div>
-       <!---Mini post-->
-       <div class="products">
-           <div class="post">
-               <h2>Cortes de Res</h2>
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum blanditiis eligendi a velit quia maxime iure numquam est explicabo ullam non, dolore eveniet cupiditate culpa optio. Aspernatur distinctio nam laboriosam?</p>
-               <img src="img\icon\res.png" height="230px">
-               <p></p>
-               <button class="boton_post">Ver más</button>
-            </div>
-           <div class="post"><h2>Cortes de Cerdo</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat at illum possimus ducimus explicabo ipsam a repellat sunt modi voluptas quaerat esse vero neque placeat aliquam molestias, quidem ipsum quos.
-            </p>
-            <img src="img\icon\cerdo.png" height="230px">
-            <p></p>
-            <button class="boton_post">Ver más</button>
-        </div>
-           <div class="post"><h2>Producto Artesanal</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus saepe provident nisi, sequi cupiditate ipsa soluta iusto totam maxime, odio sint minus, quos voluptas quam quod reiciendis! Debitis, eaque ipsa!</p>
-        <img src="img\icon\carne.png" height="230px">
-        <p></p>
-        <button class="boton_post">Ver más</button></div>     
+       </header>  
+       
+       <!---Contacto menu-->
+       <div id="contact_form_box">
+           <h2>Formulario de contacto</h2>
+           <p>Puedes completar el siguiente formulario y nos pondremos
+               en contacto contigo, para brindarte atención personalizada!
+           </p>
+       <form action="" id="contact_form">
+           <label for="name">Nombre</label>
+           <input type="text" name="name" id="" data-validation="alphanumeric" placeholder="Nombre" />
+           <label for="lastname">Apellidos</label>
+           <input type="text" name="lastname" id="" data-validation="alphanumeric placeholder="Apellido" />
+           <label for="email">Correo Electronico</label>
+           <input type="email" name="" id="" data-validation="email" placeholder="Correo" />
+           <label for="sex">Sexo</label>
+           <select name="sex" id="" data-validation="email">
+               <option value="men">Hombre</option>
+               <option value="woman">Mujer</option>
+           </select>
+           <label for="date">Fecha de Nacimiento</label>
+           <input type="text" name="date" id="" data-validation="date" data-validation-format="dd-mm-yyyy" placeholder="Fecha de nacimiento"/>
+           <label for="edad">Edad</label>
+           <input type="number" name="edad" id="" placeholder="Edad" data-validation="number" />
+           <input type="submit" value="Enviar" id="submit" name="submit">
+       </form>
+       <p> Puedes comunicarte con nosotros por nuestra linea de WhatsApp
+    </p>
     </div>
  
     <!---Formulario-->

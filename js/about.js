@@ -7,5 +7,6 @@ $(".pie").css({
     bottom: "1px"
 });
 
+$("#acordeon").accordion();
 
 })

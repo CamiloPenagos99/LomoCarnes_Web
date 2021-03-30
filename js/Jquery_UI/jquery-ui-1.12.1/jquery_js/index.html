@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <meta charset="utf-8" />
+    <head>
+        <title>Jquery UI</title>
+        <script type="text/javascript" src="jquery-3.4.0.min.js"></script>
+        <link rel="stylesheet" href="C:\Users\PC\Desktop\Udemy\Udemy\MASTER-JS\javascript1\Jquery_UI\jquery-ui-1.12.1\jquery-ui.min.css">
+        <link rel="stylesheet" href="C:\Users\PC\Desktop\Udemy\Udemy\MASTER-JS\javascript1\Jquery_UI\jquery-ui-1.12.1\jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="C:\Users\PC\Desktop\Udemy\Udemy\MASTER-JS\javascript1\Jquery_UI\jquery-ui-1.12.1\jquery-ui.theme.min.css">
+        <script type="text/javascript" src="C:\Users\PC\Desktop\Udemy\Udemy\MASTER-JS\javascript1\Jquery_UI\jquery-ui-1.12.1\jquery-ui.min.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <style>
+           #elemento{
+            background: khaki;
+            border: 2px solid tomato;
+            height: 100px;
+            width: 200px;
+            margin-top: 10px;
+           } 
+
+           #elemento2{
+            background: lavenderblush;
+            border: 2px solid slateblue;
+            height: 120px;
+            width: 220px;
+            margin-top: 10px;
+            } 
+
+            #elemento3{
+            background: lightgreen;
+            border: 2px solid teal;
+            height: 140px;
+            width: 240px;
+            margin-top: 10px;
+            }
+
+            #cajon{
+            background: rgb(203, 237, 241);
+            border: 2px solid teal;
+            height: 240px;
+            width: 240px;
+            margin-top: 10px;
+            }
+
+            #movido{
+            background: rgb(7, 177, 196);
+            border: 2px solid teal;
+            height: 140px;
+            width: 140px;
+            margin-top: 10px;
+            }
+            #dos{
+            background: rgb(79, 105, 109);
+            width: 600px;
+            height: 300px;   
+            }
+
+            #cajaefectos{
+            background: rgb(236, 211, 236);
+            border: 2px solid rgb(169, 89, 223);
+            height: 160px;
+            width: 300px;
+            margin-top: 10px;
+            display: none;
+            }
+            h3{
+            color: lavender;
+            }
+
+            .listselect li{
+            background: khaki;
+            border: 2px solid rgba(228, 136, 31, 0.603);
+            border-radius: 2px;
+            width: 150px;
+            padding: 20px;
+            list-style:none;
+            cursor: pointer;
+            font-family: "corbel";
+            }
+
+            ul .ui-selecting{background: rgb(253, 252, 244);}
+            ul .ui-selected{background: rgb(236, 125, 52);}
+
+        </style>
+        
+    </head>
+    <body>
+        <h1>Jquery libreria UI</h1>
+        <div>
+            <div id="elemento">
+                Primer elemento de la web
+            </div>
+            <div id="elemento2">
+                Segundo elemento de la web
+            </div>
+            <div id="elemento3">
+                Tercer elemento de la web
+            </div>
+        </div>
+        <hr />
+        <div>
+            <ul class="listselect">
+                <li>Seleccion UNO</li>
+                <li>Seleccion DOS</li>
+                <li>Seleccion TRES</li>
+                <li>Seleccion Cuatro</li>
+            </ul>
+        </div>
+        <div id="cajon"></div>
+        <div id="movido"></div>
+        <hr>
+        <div>
+            <button id="mostrar">Mostrar</button>
+            <div id="cajaefectos"></div>
+        </div>
+        <hr>
+        <div id="dos">
+            <h3>Widgets</h3>
+            <a href="#" title="Ir a inicio">Inicio</a>
+            <a href="#" title="Ir a Contactos">Contactos</a> 
+        </div>
+        <div id="popup" title="Continuas?">
+            <p>Desear continuar navegando</p>
+        </div>
+
+        <div>
+            <h4>Mi Calendario</h4>
+            <input type="text" id="calendar">
+        </div>
+        <hr />
+        <div id="mimenu">
+            <ul>
+                <li><a href="#tabs-1">Pestaña UNO</a></li>
+                <li><a href="#tabs-2">Pestaña DOS</a></li>
+            </ul>
+            <div id="tabs-1">
+                Texto de la primera pestaña
+            </div>
+            <div id="tabs-2">
+                Texto de la Segunda pestaña
+            </div>
+        </div>
+    </body>
+</html>
